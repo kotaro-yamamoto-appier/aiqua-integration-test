@@ -22,4 +22,5 @@
   <dialog id="checkout-dialog"><div class="dialog-top"><h2>Mock checkout</h2><button class="close" aria-label="Close checkout">×</button></div><div id="checkout-content"></div></dialog>
   <dialog id="lab-dialog" class="lab"><div class="dialog-top"><h2>Integration lab</h2><button class="close" aria-label="Close integration lab">×</button></div><p id="sdk-status"></p><p class="muted">Events below show what this browser attempted to send. SDK calls do not confirm delivery. Validate live events in AIQUA → Recent Activity.</p><details><summary>Connect your AIQUA project</summary><ol><li>In Appier: Common settings → Integration → SDK → Web SDK.</li><li>Register this website URL, then copy your project's snippet into the marked section of <code>dist/index.html</code>.</li><li>Set <code>enabled: true</code> in <code>dist/aiqua-config.js</code>, reload, and repeat your shopping actions.</li></ol><p>Only future events are forwarded. Earlier local events are never replayed.</p></details><div class="lab-tools"><button id="export-events">Export JSON</button><button id="clear-events">Clear log</button></div><div id="event-log"></div></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
-</body></html>
+</body>
+</html>
