@@ -2,6 +2,14 @@
 
 A buildless, frontend-only shop: six products, category filters, product detail URLs, a persistent localStorage cart, quantity controls, and a mock checkout. No accounts, backend, payment processing, or dependencies. Currency is USD.
 
+## Cloudflare Pages deployment
+
+Live site: https://little-goods-aiqua-test.pages.dev/
+
+Project: `little-goods-aiqua-test` (Pages Direct Upload).
+
+To publish updates, open this project in Cloudflare → Workers & Pages, create a new production deployment, and upload the contents of `dist/` as a folder or ZIP. `index.html` must be at the upload root. No build command is needed. The `.openai/hosting.json` file belongs to the separate original Sites preview; it is not used by Cloudflare Pages.
+
 ## Run locally
 
 From this directory:
