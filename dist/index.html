@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Goods — Everyday, considered.</title>
+  <meta name="description" content="A simple shopping sandbox for testing AIQUA events.">
+  <link rel="stylesheet" href="style.css">
+  <!-- AIQUA: paste your project's complete Web SDK snippet here, before app.js.
+       Then set enabled: true in aiqua-config.js. No API secret is needed here. -->
+  <script src="aiqua-config.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A little less ordinary. A little more everyday. <span>Free mock shipping on every order ↗</span></div>
+  <header><a class="brand" href="#" aria-label="Little Goods home">little goods<span>®</span></a><nav aria-label="Main"><a href="#collection">The collection</a><button id="lab-open">Integration lab <span class="status-dot"></span></button></nav><button class="bag" id="cart-open">Bag <span id="cart-count">0</span></button></header>
+  <main>
+    <section class="hero"><div class="hero-copy"><p class="eyebrow">THOUGHTFUL THINGS, DAILY RITUALS</p><h1>Everyday,<br><em>considered.</em></h1><p>Good things don’t need to be complicated.<br>Meet the little essentials that make a day.</p><a class="button dark" href="#collection">Find your everyday <span>↗</span></a><div class="hero-note"><span>01 — THE EVERYDAY EDIT</span><span>Made for slowing down.</span></div></div><div class="hero-art"><div class="circle"></div><div class="still-life" aria-hidden="true"><div class="book">the art of<br>little things<span>VOL. 01</span></div><div class="vase"><i></i><i></i><i></i></div><div class="hero-cup"><span></span></div><div class="ground"></div></div><span class="art-caption">LESS, BUT LOVELIER.</span><div class="art-tag">Objects for<br>a softer day. <span>✳</span></div></div></section>
+    <section id="collection" class="collection"><div class="section-title"><div><p class="eyebrow">THE LITTLE GOODS COLLECTION</p><h2>Your daily rotation.</h2></div><p>Simple pieces. Plenty of possibility.</p></div><div class="toolbar"><div class="filters" role="group" aria-label="Filter products"><button class="active" data-category="All">All goods</button><button data-category="Home">Home</button><button data-category="On the go">On the go</button><button data-category="Stationery">Stationery</button></div><span id="product-count">6 considered essentials</span></div><div id="products" class="products"></div></section>
+    <section class="closing"><span>✳</span><div><h2>A small shop. A useful sandbox.</h2><p>Browse, add to your bag, and try a mock checkout. Every interaction has a story.</p></div><button id="lab-open-bottom">Explore the integration lab ↗</button></section>
+  </main><footer><a class="brand" href="#">little goods<span>®</span></a><p>A demo store. No real payments, no real orders.</p><span>EVERYDAY, CONSIDERED. © 2026</span></footer>
+  <dialog id="cart-dialog" class="drawer"><div class="dialog-top"><h2>Your bag <span id="bag-title-count"></span></h2><button class="close" aria-label="Close bag">×</button></div><div id="cart-content"></div></dialog>
+  <dialog id="product-dialog"><button class="close float" aria-label="Close product details">×</button><div id="product-detail"></div></dialog>
+  <dialog id="checkout-dialog"><div class="dialog-top"><h2>Mock checkout</h2><button class="close" aria-label="Close checkout">×</button></div><div id="checkout-content"></div></dialog>
+  <dialog id="lab-dialog" class="lab"><div class="dialog-top"><h2>Integration lab</h2><button class="close" aria-label="Close integration lab">×</button></div><p id="sdk-status"></p><p class="muted">Events below show what this browser attempted to send. SDK calls do not confirm delivery. Validate live events in AIQUA → Recent Activity.</p><details><summary>Connect your AIQUA project</summary><ol><li>In Appier: Common settings → Integration → SDK → Web SDK.</li><li>Register this website URL, then copy your project's snippet into the marked section of <code>dist/index.html</code>.</li><li>Set <code>enabled: true</code> in <code>dist/aiqua-config.js</code>, reload, and repeat your shopping actions.</li></ol><p>Only future events are forwarded. Earlier local events are never replayed.</p></details><div class="lab-tools"><button id="export-events">Export JSON</button><button id="clear-events">Clear log</button></div><div id="event-log"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body></html>
